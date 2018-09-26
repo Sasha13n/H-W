@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var name = prompt('Ваше имя?');
+		var age = prompt('Сколько вам лет?');
+		if (confirm('есть ли у вас питомец?'))
+		{
+            		prompt('как зовут?');
+					alert('Привет ' + name + ', как дела у питомца?');
+        		} else {
+            		alert('не грустно ли жить без питомца');
+        		}
+	</script>
+
+
+
+	
+	<script>
+		confirm('ax2 + bx + c = 0');
+		var a = +prompt('a');
+		var b = +prompt('b');
+		var c = +prompt('c');
+		var x1, x2;
+		var d = Math.pow(b,2)-4*a*c;
+		if (d < 0){
+    		alert("корней нет");
+		}
+		else if (d == 0){
+    		var x1 = (-b + Math.sqrt(d))/2*a;
+			alert(x1);
+		}
+		else if (d > 0){
+			var x1 = (-b + Math.sqrt(d))/2*a;
+			var x2 = (-b - Math.sqrt(d))/2*a;
+    		alert(x1);
+			alert(x2);
+		}
+	</script>
+
+
+
+
+	<script>
+		var  height = 9;
+		var  width = '';
+		var  str = '';
+    
+    	for(var i = 0; i < height; i++){
+    		width += '*';
+      		console.log(str, width);
+    		str = str.substring(0, str.length - 1);
+    	}
+    
+        for(var j = height; j > 0; j--){
+         	str += ' ';
+        	width = width.substring(0, width.length - 1);
+         	console.log(str, width);
+        }
+	</script>
+
+</body>
+</html>
